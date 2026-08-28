@@ -1,6 +1,6 @@
 <header>
     <h1>cris-wav-collectibles</h1>
-    <p>Your most trusted one-stop shop for album, photocard, and official music cris-wav-collectibles</p>
+    <p>Your most trusted one-stop shop for album, photocard, and official music collectibles</p>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -32,6 +32,55 @@
             <td>₱350</td>
         </tr>
     </table>
+
+    <hr>
+
+    <h2>Order Enquiry</h2>
+    <form action="#" method="post">
+        <p>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+        </p>
+
+        <fieldset>
+            <legend>Select Delivery Method</legend>
+            <p>
+                <input type="radio" id="standard-delivery" name="delivery_method" value="standard" checked>
+                <label for="standard-delivery">Standard Shipping</label>
+            </p>
+            <p>
+                <input type="radio" id="express-delivery" name="delivery_method" value="express">
+                <label for="express-delivery">Express Delivery</label>
+            </p>
+            <p>
+                <input type="radio" id="same-day-delivery" name="delivery_method" value="same-day">
+                <label for="same-day-delivery">Same Day Courier</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Optional Extras</legend>
+            <p>
+                <input type="checkbox" id="toploader-extra" name="extras" value="toploader">
+                <label for="toploader-extra">Hard Toploader Sleeving</label>
+            </p>
+            <p>
+                <input type="checkbox" id="gift-wrap-extra" name="extras" value="gift-wrap">
+                <label for="gift-wrap-extra">Gift Wrapping & Card</label>
+            </p>
+            <p>
+                <input type="checkbox" id="insurance-extra" name="extras" value="insurance">
+                <label for="insurance-extra">Shipping Insurance</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="contact-email">Contact Email:</label><br>
+            <input type="email" id="contact-email" name="contact-email" required>
+        </p>
+
+        <button type="submit">Submit enquiry</button>
+    </form>
 </main>
 
 <footer>
