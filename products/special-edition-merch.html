@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="../style.css">
+
+<header>
+    <h1>cris-wav-collectibles</h1>
+    <p>Your most trusted one-stop shop for album, photocard, and official music collectibles</p>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Special Edition Merch</h1>
+    
+    <img src="../merch.jpg" alt="Exclusive music shop items, posters, and limited-edition fan collectibles" width="300">
+
+    <p>Explore our exclusive collection of limited-edition music merch and official fan shop items. From official concert image pickets and mini-fan fans to rare tour posters and specialty shop goods, every item is guaranteed 100% authentic and directly imported for true collectors.</p>
+
+    <h2>Product Specifications</h2>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Condition</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Official Fan Goods</td>
+            <td>Limited Edition Merch & Posters</td>
+            <td>Brand New & Unused</td>
+            <td>₱850</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Order Enquiry</h2>
+    <form action="#" method="post">
+        <p>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+        </p>
+
+        <fieldset>
+            <legend>Select Delivery Method</legend>
+            <p>
+                <input type="radio" id="standard-delivery" name="delivery_method" value="standard" checked>
+                <label for="standard-delivery">Standard Shipping</label>
+            </p>
+            <p>
+                <input type="radio" id="express-delivery" name="delivery_method" value="express">
+                <label for="express-delivery">Express Delivery</label>
+            </p>
+            <p>
+                <input type="radio" id="same-day-delivery" name="delivery_method" value="same-day">
+                <label for="same-day-delivery">Same Day Courier</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Optional Extras</legend>
+            <p>
+                <input type="checkbox" id="poster-tube-extra" name="extras" value="poster-tube">
+                <label for="poster-tube-extra">Poster Tube (for rolled posters)</label>
+            </p>
+            <p>
+                <input type="checkbox" id="bubble-wrap-extra" name="extras" value="bubble-wrap">
+                <label for="bubble-wrap-extra">Extra Heavy-Duty Bubble Wrap</label>
+            </p>
+            <p>
+                <input type="checkbox" id="gift-wrap-extra" name="extras" value="gift-wrap">
+                <label for="gift-wrap-extra">Gift Wrapping & Card</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="contact-email">Contact Email:</label><br>
+            <input type="email" id="contact-email" name="contact-email" required>
+        </p>
+
+        <button type="submit">Submit enquiry</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 cris-wav-collectibles. All rights reserved.</p>
+</footer>
