@@ -31,34 +31,34 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 3. Layout regions */
+/* 3. Layout regions & Header Flexbox (Module 6.1) */
 header {
     background-color: #ffffff;
     border-bottom: 2px solid var(--muted-grey);
-    padding: 1.5rem;
-    text-align: center;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     color: var(--brand-color);
-    margin: 0 0 0.5rem 0;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
-header p {
-    color: var(--muted-grey);
-    margin: 0 0 1rem 0;
-}
-
-/* Horizontal Nav Bar */
+/* Flexbox Navigation */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 20px; /* Replaces inline-block margins with Flexbox gap */
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 0.75rem;
+    /* Removed display: inline-block; */
+    margin: 0;
 }
 
 nav a {
@@ -70,6 +70,26 @@ main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
+}
+
+/* Centered Banner Component (Horizontally and Vertically) */
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; /* Specific height required for vertical centering */
+    background-color: #f0e6ff;
+    border: 1px dashed var(--brand-color);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--brand-color);
+    margin: 0;
 }
 
 footer {
@@ -84,24 +104,22 @@ footer {
 .product-card {
     background-color: #ffffff;
     border-radius: 8px;
-    padding: 1.25rem; /* At least 16px padding */
-    border-left: 5px solid var(--brand-color); /* Coloured left border using brand variable */
+    padding: 1.25rem;
+    border-left: 5px solid var(--brand-color);
     border-top: 1px solid var(--muted-grey);
     border-right: 1px solid var(--muted-grey);
     border-bottom: 1px solid var(--muted-grey);
-    margin-bottom: 1.5rem; /* Prevents cards from touching */
+    margin-bottom: 1.5rem;
 }
 
 .product-card h3 {
-    font-size: 1.35rem; /* Distinct font size */
-    color: var(--brand-color); /* Distinct brand color */
+    font-size: 1.35rem;
+    color: var(--brand-color);
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
-/* ==========================================================================
-   5. Form Styles
-   ========================================================================== */
+/* 5. Form Styles */
 fieldset {
     padding: 1rem;
     border: 1px solid var(--muted-grey);
@@ -120,14 +138,13 @@ input[type="email"],
 input[type="number"],
 textarea {
     width: 100%;
-    padding: 0.6rem; /* Consistent padding on inputs */
+    padding: 0.6rem;
     border: 1px solid var(--muted-grey);
     border-radius: 4px;
     font-size: 1rem;
     margin-top: 0.25rem;
 }
 
-/* Visible focus state for keyboard accessibility */
 input:focus,
 textarea:focus,
 button:focus {
