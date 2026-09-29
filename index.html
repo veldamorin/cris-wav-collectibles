@@ -1,52 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<header>
-    <h1>cris-wav-collectibles</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Outer page wrapper for Grid Layout -->
+    <div class="page">
 
-<main>
-    <div class="hero-banner">
-        <p>Your most trusted one-stop shop for album, photocard, and official music cris-wav-collectibles</p>
+        <!-- Grid Area: masthead -->
+        <header>
+            <h1>cris-wav-collectibles</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Grid Area: side -->
+        <aside>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Official Albums</a></li>
+                <li><a href="#">Photocards</a></li>
+                <li><a href="#">Lightsticks</a></li>
+                <li><a href="#">Merchandise</a></li>
+            </ul>
+
+            <h3>Why Shop With Us?</h3>
+            <p>100% authentic items sourced directly with original inclusions preserved.</p>
+        </aside>
+
+        <!-- Grid Area: main -->
+        <main>
+            <div class="hero-banner">
+                <p>Your most trusted one-stop shop for album, photocard, and official music cris-wav-collectibles</p>
+            </div>
+
+            <h2>Our Products</h2>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <h3>Official Music Albums</h3>
+                    <p>₱1,200</p>
+                    <p>Authentic sealed physical albums from top artists, complete with original inclusions.</p>
+                    <img src="music_albums.jpg" alt="Official Music Albums" width="160">
+                    <a href="products/official-music-albums.html">View details</a>
+                </article>
+
+                <article class="product-card">
+                    <h3>Photocard Collectibles</h3>
+                    <p>₱350</p>
+                    <p>Official and rare trading photocards kept in mint condition with protective sleeves.</p>
+                    <img src="photocards.jpg" alt="Photocard Collectibles" width="160">
+                    <a href="products/photocard-collectibles.html">View details</a>
+                </article>
+
+                <article class="product-card">
+                    <h3>Special Edition Merch</h3>
+                    <p>₱850</p>
+                    <p>Exclusive music shop items, posters, and limited-edition fan collectibles.</p>
+                    <img src="merch.jpg" alt="Special Edition Merch" width="160">
+                    <a href="products/special-edition-merch.html">View details</a>
+                </article>
+            </div>
+        </main>
+
+        <!-- Grid Area: foot -->
+        <footer>
+            <p>&copy; 2026 cris-wav-collectibles. All rights reserved.</p>
+        </footer>
+
     </div>
 
-    <h2>Our Products</h2>
-
-    <div class="product-grid">
-        <article class="product-card">
-            <h3>Official Music Albums</h3>
-            <p>₱1,200</p>
-            <p>Authentic sealed physical albums from top artists, complete with original inclusions.</p>
-            <img src="music_albums.jpg" alt="Official Music Albums" width="160">
-            <a href="products/official-music-albums.html">View details</a>
-        </article>
-
-        <article class="product-card">
-            <h3>Photocard Collectibles</h3>
-            <p>₱350</p>
-            <p>Official and rare trading photocards kept in mint condition with protective sleeves.</p>
-            <img src="photocards.jpg" alt="Photocard Collectibles" width="160">
-            <a href="products/photocard-collectibles.html">View details</a>
-        </article>
-
-        <article class="product-card">
-            <h3>Special Edition Merch</h3>
-            <p>₱850</p>
-            <p>Exclusive music shop items, posters, and limited-edition fan collectibles.</p>
-            <img src="merch.jpg" alt="Special Edition Merch" width="160">
-            <a href="products/special-edition-merch.html">View details</a>
-        </article>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2026 cris-wav-collectibles. All rights reserved.</p>
-</footer>
+</body>
+</html>
